@@ -1,1 +1,27 @@
 // Mixins Here
+
+.flex(@direction, @justify){
+    display:flex;
+    flex-direction: @direction;
+    flex-wrap: wrap;
+    justify-content: @justify;
+    align-items: center;
+}
+
+.imageStyle(@width, @height, @borderRadius)
+{
+    width: @width;
+    height: @height;
+    border-radius: @borderRadius;
+}
+
+.baseButton(@background, @color, @yPad, @xPad){
+    background: @background;
+    color: @color;
+
+    padding: @yPad @xPad;
+    
+    font-size: 1.8rem;
+    border-radius: 5px;
+    text-align: center;
+}
