@@ -25,3 +25,19 @@
     border-radius: 5px;
     text-align: center;
 }
+
+.enlargeOnHover(@scale, @time, @animName){
+    @keyframes @animName{
+        0%{
+            transform: scale(1.0);
+        }
+        100%{
+            transform: scale(@scale);
+        }
+    }
+
+    &:hover{
+        animation: @animName @time;
+        transform: scale(@scale);
+    }
+}
